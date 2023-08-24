@@ -36,7 +36,7 @@ public class BookstoreController {
             consumes = {MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE},
             produces = {MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE})
     public ResponseEntity<String> createOrder(@Valid @RequestBody BookOrderRequest bookOrderRequest) {
-        Long bookOrderId = bookService.saveBookOrder(bookOrderRequest);
+        String bookOrderId = bookService.saveBookOrder(bookOrderRequest);
         return new ResponseEntity<>("Book ordered with ID = " + bookOrderId, HttpStatus.CREATED);
     }
 

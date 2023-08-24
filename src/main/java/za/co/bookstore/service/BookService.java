@@ -6,7 +6,7 @@ import za.co.bookstore.model.Book;
 import java.util.List;
 
 public interface BookService {
-    Long saveBookOrder(BookOrderRequest bookOrderRequest);
+    String saveBookOrder(BookOrderRequest bookOrderRequest);
 
     List<Book> findAllBookOrders();
 }

@@ -92,9 +92,25 @@ All infrastructure and application code are hosted in a public GitHub repository
 
 The API is publicly available for testing. You can access and test the API endpoints using your GitHub account credentials for authentication.
 
-**Swagger URL:** `http://HOST_NAME/swagger-ui.html`
+**Swagger URL:** `http://ec2-16-171-147-116.eu-north-1.compute.amazonaws.com:8080/swagger-ui.html`
 
-**Controller:** `Bookstore Controller`
+**LIVE Demo:**
+
+**POST**
+```shell
+curl --location 'http://ec2-16-171-147-116.eu-north-1.compute.amazonaws.com:8080/api/bookstore/order' \
+--header 'Content-Type: application/json' \
+--header 'Cookie: JSESSIONID=1BCBB05753290F06ABE6E3E7E4AF6A49' \
+--data '{
+"isbn": "Sample Book 1",
+"quantity": 10
+}'
+```
+**GET**
+```shell
+curl --location 'http://ec2-16-171-147-116.eu-north-1.compute.amazonaws.com:8080/api/bookstore/allorders' \
+--header 'Cookie: JSESSIONID=1BCBB05753290F06ABE6E3E7E4AF6A49'
+```
 
 ## Conclusion
 

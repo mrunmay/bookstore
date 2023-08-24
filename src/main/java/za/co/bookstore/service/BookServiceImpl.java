@@ -7,6 +7,8 @@ import za.co.bookstore.model.Book;
 import za.co.bookstore.repository.BookRepository;
 
 import java.util.List;
+import java.util.Random;
+import java.util.UUID;
 
 @Service
 public class BookServiceImpl implements BookService {
@@ -18,8 +20,10 @@ public class BookServiceImpl implements BookService {
     }
 
     @Override
-    public Long saveBookOrder(BookOrderRequest bookOrderRequest) {
+    public String saveBookOrder(BookOrderRequest bookOrderRequest) {
+        UUID uuid = UUID.randomUUID();
         Book book = new Book();
+        book.setId(uuid.toString());
         book.setIsbn(bookOrderRequest.getIsbn());
         book.setQuantity(bookOrderRequest.getQuantity());
         bookRepository.save(book);

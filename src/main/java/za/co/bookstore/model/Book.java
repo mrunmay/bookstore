@@ -15,8 +15,7 @@ import javax.persistence.Id;
 public class Book {
     @Id
     @Column(name = "id")
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    Long id;
+    String id;
 
     @Column(name = "isbn")
     String isbn;

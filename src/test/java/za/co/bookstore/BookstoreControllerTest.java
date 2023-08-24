@@ -32,7 +32,7 @@ public class BookstoreControllerTest {
     public void testCreateOrder() {
         BookOrderRequest orderRequest = new BookOrderRequest(); // Create a valid order request object
 
-        when(bookService.saveBookOrder(orderRequest)).thenReturn(1L); // Mock the service method
+        when(bookService.saveBookOrder(orderRequest)).thenReturn("1"); // Mock the service method
 
         ResponseEntity<String> response = bookController.createOrder(orderRequest);
 
