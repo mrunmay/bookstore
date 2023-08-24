@@ -1,4 +1,4 @@
-# Bookstore API
+# Bookstore API [![Java CI with Maven](https://github.com/mrunmay/bookstore/actions/workflows/maven.yml/badge.svg)](https://github.com/mrunmay/bookstore/actions/workflows/maven.yml)
 
 Welcome to the Bookstore API documentation. This document outlines the requirements, constraints, and details of the API.
 
