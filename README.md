@@ -64,7 +64,7 @@ GET /api/bookstore/allorders
   {
     "id": 2,
     "isbn": "Sample Book 2",
-    "quantity": 25
+    "quantity": 26
   }
 ]
 ```
