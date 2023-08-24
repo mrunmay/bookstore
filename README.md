@@ -57,14 +57,9 @@ GET /api/bookstore/allorders
 ```json    
  [
   {
-    "id": 1,
+    "id": "78285bb7-736f-459a-8080-3eb047e3026a",
     "isbn": "Sample Book 1",
     "quantity": 10
-  },
-  {
-    "id": 2,
-    "isbn": "Sample Book 2",
-    "quantity": 26
   }
 ]
 ```
